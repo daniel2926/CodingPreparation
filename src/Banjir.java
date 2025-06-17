@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Banjir {
@@ -7,14 +9,37 @@ public class Banjir {
 
         int T = input.nextInt();
 
-
+        ArrayList<String> result = new ArrayList<String>();
+        boolean status = false;
+        input.nextLine();
 
         for (int i = 0; i < T; i++) {
+            System.out.println("Input N: ");
             int N = input.nextInt();
+            System.out.println("Input M: ");
             int M = input.nextInt();
+            input.nextLine();
             for (int j = 0; j < N; j++) {
-                String pagar = input.next();
+                String [] arr = new String[M];
+                String pagar = input.nextLine();
+                arr[j] = pagar;
+                if(j == 0 && j == N - 1) {
+                    if (!arr[j].isBlank()) {
+                        status = true;
+                    }
+                }
+            }
+            if(status){
+                result.add("IYA");
+            }
+            else
+            {
+                result.add("TIDAK");
             }
         }
+        for(String print : result){
+            System.out.println(print);
+        }
+
     }
 }
