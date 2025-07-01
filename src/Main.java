@@ -1,8 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-      int num = 21 % 6;
-        System.out.println(num);
+import java.util.*;
+import java.io.*;
+
+class Main{
+    public static void main(String []argh){
+        String text = "Daniel";
+
+        System.out.println(text.replace(text.charAt(1),'o'));
     }
 }
