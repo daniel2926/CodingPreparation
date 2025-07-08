@@ -28,7 +28,7 @@ public class Ubin {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long n = 2;
+        long n = sc.nextLong();
         long ans = modex(n);
         System.out.println((ans * ans) % MOD);
     }
