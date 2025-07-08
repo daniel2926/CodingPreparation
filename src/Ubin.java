@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
+public class Ubin {
     static final long MOD = (long)1e9 + 7;
 
     static long[][] mul(long[][] a, long[][] b) {
@@ -28,7 +28,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long n = sc.nextLong();
+        long n = 2;
         long ans = modex(n);
         System.out.println((ans * ans) % MOD);
     }
